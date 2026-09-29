@@ -1,0 +1,20 @@
+{
+  "name": "catalog",
+  "port": 8080,
+  "entrypoint": "app:app",
+  "ingress": "internal",
+  "peers": {
+    "edge": {
+      "url": "http://edge:8080",
+      "repository": "https://github.com/sainath1204/meridian-edge"
+    },
+    "accounts": {
+      "url": "http://accounts:8080",
+      "repository": "https://github.com/sainath1204/meridian-accounts"
+    },
+    "query": {
+      "url": "http://query:8080",
+      "repository": "https://github.com/sainath1204/meridian-query"
+    }
+  }
+}
